@@ -25,6 +25,7 @@ export const getCategories = async () => {
         },
         headers: {
           Authorization: token,
+          'Referrer-Policy': 'no-referrer',
         },
       }
     );
@@ -47,6 +48,7 @@ export const getDocumentsByCategory = async (categories: string) => {
         },
         headers: {
           Authorization: token,
+          'Referrer-Policy': 'no-referrer',
         },
       }
     );
@@ -68,6 +70,7 @@ export const getDocuments = async () => {
         },
         headers: {
           Authorization: token,
+          'Referrer-Policy': 'no-referrer',
         },
       }
     );
@@ -91,6 +94,7 @@ export const deleteDocument = async (path:string) => {
         },
         headers:{
           Authorization: token,
+          'Referrer-Policy': 'no-referrer',
         }
       }
     )
@@ -112,6 +116,7 @@ export const switchCategory = async (from:string, category:string,fileName:strin
         },
         headers:{
           Authorization: token,
+          'Referrer-Policy': 'no-referrer',
         }
       }
     )
